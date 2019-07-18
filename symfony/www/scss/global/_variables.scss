@@ -1,0 +1,135 @@
+$icomoon-font-path: "/fonts" !default;
+
+$icon-cardio-icon: "\e900";
+$icon-clients-icon: "\e901";
+$icon-cog-icon: "\e902";
+$icon-contact-coach-icon: "\e903";
+$icon-dashboard-icon: "\e904";
+$icon-logout-icon: "\e905";
+$icon-nutrition-icon: "\e906";
+$icon-strength-icon: "\e907";
+
+$white: #fff;
+
+//menu
+$mainMenuBgColor: #FFFFFF;
+$mainMenuItemBgColor: #FFFFFF;
+$mainMenuItemColor: #B1B5BE; //item color
+$mainMenuItemActiveColor: #ffffff; //item in hover/active color
+/* sub menu */
+$subMenuItemColor: #B1B5BE;
+$subMenuItemActiveColor: #4E545F;
+$subMenuBorderBottomColor: #F2F4F7;
+// sandwich
+$sandwichBtnLineColor: #E7E7E7;
+$sandwichBtnCloseLineColor: #9B9B9B;
+
+
+//top-menu 
+$mainMenuItemFocusColor: #777; //item in focus color - todo
+
+// li bg colors
+$mainMenuDashboardItemColor: #A1A7B3;
+$mainMenuClientsItemColor: #EF3E3B;
+$mainMenuBiometricsItemColor: #FCCF0B;
+$mainMenuNutritionItemColor: #7ED321;
+$mainMenuCardioItemColor: #FF9A37;
+$mainMenuStrengthItemColor: #62ACFF;
+
+// header
+$headerBgColor: #ffffff;
+$headerColor: #B1B7C0;
+$headerActiveColor: #4E545F;
+$headerActiveBorderColor: #EF3E3B;
+$headerNutritionActiveBorderColor: #7ED321;
+$headerCardioActiveBorderColor: #FF9A37;
+$headerStrengthActiveBorderColor: #62ACFF;
+
+//container
+$containerBgColor: #F2F4F7;
+
+// white-block
+$whiteBlockBgColor: #ffffff;
+$blockHeadColor: #51555F;
+$borderBottomColor: #FF3C38;
+$borderNutritionBottomColor: #34D400;
+$borderCardioBottomColor: #FF9B28;
+$borderStrengthBottomColor: #18ADFF;
+$borderBiometricsBottomColor: #FFD000;
+// table
+$tableTheadBgColor: #E8EAED; //bg
+$tableTheadColor: #B1B5BE;  //table head text color
+$tableTbodyColor: #7B8190; //table body text color
+$tableRowBorderColor: #F2F4F7;
+
+//form
+$checkboxBgColor: #E8E9EC;
+$radioActiveCircleColor: #ffffff;
+$inputTextColor: #7B8190;
+$inputLabelColor: #B1B5BE;
+$disabledRadioBorderColor: #A1A7B3;
+$hrColor: #F2F4F7;
+$yesNoText: #B1B6C0;
+
+// Title of blocks
+$titleBlockColor: #4E545F;
+$titleBlockRightColor: #B1B5BE;
+$titleMutedTextColor: #A1A7B3;
+$inputSearchBorderColor: #A1A5B1;
+$inputBorderColor: #E8E9EC;
+$formLabelAndSpanColor: #798292;
+$subTitleColor: #B1B5BE;
+
+// tableBottomLine
+$tableBottomLineBtnColor: #ffffff;
+$tableBottomLineBtnBgColor: #A1A5B1;
+$infoTextColor: #B1B7C0;
+
+// Pagination 
+$paginationColor: #B1B7C0;
+$paginationBgColor: #A1A7B3;
+
+//modal info
+$infoModalBg: #D0D2D8;
+
+
+$biometric: #F0CE33;
+$nutrition: #9BD23C;
+$cardio: #E79941;
+$strength: #62ACFF;
+
+
+$cellBodyColor: #7B8190;
+
+$textColor: #798292;
+
+// accordion
+$accordionItemActiveClientsBorderColor: #FF3C38;
+$accordionItemActiveNutritionBorderColor: #34D400;
+$accordionItemActiveCardioBorderColor: #FF9B28;
+$accordionItemActiveStrengthBorderColor: #63ABFF;
+$accordionItemBorderColor: #F0F2F5;
+$accordionItemBgColor: #E8EAED;
+$accordionItemActiveBgColor: #ffffff;
+$mobileAccordionHeadBgColor: #E8E9EC;
+$mobileAccordionCustomHead: #A1A5B1;
+
+
+// chart
+$redLine: #EF3E3B;
+$greenLine: #7ED321;
+$tooltipBgColor: #41444E;
+$monthBgColor: #A1A5B1;
+$yAxisColor: #E8E9EC;
+$yAxisTextColor: #B1B5BE;
+$xAxisBgColor: #A1A7B3;
+
+// "Your current level" in title of page
+$titleRowCardioTextRightOfLevelColor: #FFAA45;
+$titleRowStrengthTextRightOfLevelColor: #74BBFF;
+
+
+$darkBtnBgColor: #3D424D;
+
+$mobilePaginationCurrent: #B1B5BE;
+$mobileNav: #B1B5BE;

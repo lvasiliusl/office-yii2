@@ -1,0 +1,43 @@
+.weeks-wrap {
+    .week-wrap {
+        display: none;
+        
+        &.active {
+            display: block;
+        }
+    }
+    
+    .remove-week {
+        margin: 30px 0px;
+    }
+    
+    .day-block {
+        .tableBottomLine {
+            padding: 30px 0;
+        }
+        
+        .white-block {
+            &.tips {
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+.empty-space {
+    padding: 4em 0;
+}
+
+.alternate-wrapper {
+    .alternate-line {
+        position: relative;
+        padding-right: 30px;
+        
+        .button {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%) translateX(100%);
+        }
+    }
+}

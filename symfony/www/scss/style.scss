@@ -1,0 +1,831 @@
+/*
+ * Summary:
+ *  1. Reset styles
+ *      1.1 Bootstrap custom styles
+ *  2. Header
+ *      2.1 Navigation
+ *      2.2 Search
+ *  3. Page common styles
+ *      3.1 Infinite scroll
+ *      3.2 Gallery styles
+ *      3.3 Iframe & Embed styles
+ *      3.4 Tabs styles
+ *      3.5 Contact form
+ *      3.6 Tag cloud
+ *      3.7 Masonry block styles
+ *      3.8 TweetDis styles
+ *  4. Sidebar & Widgets styles
+ *  5. Error 404 page
+ *  6. Search page
+ *  7. Footer
+ *  8. Media queries
+ *  9. Custom page styles
+ *      9.1 General styles
+ *      9.2 Containers
+ *      9.3 Homepage
+ *      9.4 Thank you page
+ *      9.5 Long page
+ *      9.6 TOC
+ *      9.7 Contact Page
+ *      9.8 Sidebar Related
+ *      9.9 New Footer
+ *      9.10 Top-day
+ *      9.11 BBSpoiler
+ *  9.12 Related Posts
+ *  9.13 Social Shares
+ *  10. Resume navigation
+ *  11. Resume plugin
+ *  12. Potty
+ *  13. CCAF
+ *  14. Memo
+ *  15. DM templates
+ *  16. CS Resume
+ *  17. Toolkit
+ *  18. Featured Page (No Header)
+ *  19. Invoice Page styles
+ *      19.1 Media queries
+ *  20. Cover Letter Page styles
+ */
+
+/*1. Reset styles*/
+/*    1.1 Foundation*/
+@import 'global/imports';
+@import 'global/variables';
+@import 'global/mixins';
+
+/*2. Layout*/
+/*    2.1 Header*/
+@import 'layout/header';
+/*    2.2 main menu*/
+@import 'layout/main-menu';
+/*    2.3 calendar */
+@import 'layout/calendar';
+
+@import 'layout/chart';
+
+@import 'layout/login-page';
+/*3. Blocks*/
+/*    X.1Pagination*/
+@import 'blocks/pagination';
+@import 'blocks/forms';
+@import 'blocks/table';
+@import 'blocks/modal';
+@import 'blocks/accordion';
+@import 'blocks/datepicker';
+@import 'blocks/clientNotification';
+@import 'blocks/gallery';
+
+body, body * {
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background-color: $containerBgColor;
+  cursor: default;
+  &.no-scroll {
+    overflow: hidden;
+  }
+}
+.row.expanded {
+  width: 1400px;
+}
+.row {
+  max-width: none;
+}
+
+.container {
+  width: 100%;
+  padding-left: 358px;
+  min-height: 100vh;
+  background-color: $containerBgColor;
+}
+
+.column {
+  &.recent {
+    padding-right: 25px;
+    .white-block {
+      .block-body {
+        padding: 52px 58px 20px;
+      }
+    }
+  }
+  &.previous {
+    padding-left: 25px;
+    .white-block {
+      .block-body {
+        padding: 52px 58px 20px;
+      }
+    }
+  }
+}
+.white-block {
+  background-color: $whiteBlockBgColor;
+  border: 1px solid #D0D3D9;
+  margin-top: 57px;
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+
+  &:last-of-type {
+    margin-bottom: 50px;
+  }
+
+  h3.block-head {
+    color: $blockHeadColor;
+    padding: 45px 60px 38px;
+    letter-spacing: 0.22px;
+    margin: 0px;
+    border-bottom: 3px solid $borderBottomColor;
+    font-weight: 500;
+
+    .secondary {
+      padding: 14px 30px;
+      position: relative;
+      top: -5px;
+    }
+    .date {
+      color: $infoTextColor;
+    }
+  }
+  .block-body{
+    padding: 52px 60px 20px;
+    &.single {
+      padding: 52px;
+    }
+    hr {
+      margin: 60px 0px;
+      width: 100%;
+      max-width: 100%;
+      border-bottom: 1px solid $hrColor;
+    }
+  }
+  &.biometric {
+    .block-head{
+      background:$biometric;
+      border-bottom: none;
+      color: $white;  
+    }
+    .block-body{
+      padding: 32px 62px 32px;
+
+      .client-biometric {
+        width: 100%;
+
+        .client-biometric-row {
+          display: flex;
+          width: 96%;
+          border-bottom: 1px solid $tableRowBorderColor;
+          &:last-of-type {
+            border: 0px;
+          }
+
+          .client-biometric-desc {
+            padding: 26px 0 26px 0px;
+            flex: 0 0 75%;
+            letter-spacing: 0.6px;
+            color: $tableTbodyColor;
+          }
+          .client-biometric-value {
+            padding: 26px 0px 26px 0px;
+            flex: 0 0 25%;
+            letter-spacing: 0.6px;
+            color: $tableTbodyColor;
+          }
+        }
+      }
+    }
+    .img-holder{
+      text-align: center;
+      letter-spacing: -4px;
+      font-size: 0;
+      &:before{
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        width: 0;
+        height: 100%;
+      }
+      img{
+        vertical-align: top;
+        width: 100%;
+      }
+    }
+  }
+  &.nutrition {
+    .block-head{
+      background:$nutrition;
+      border-bottom: none;
+      color: $white;  
+    }
+  }
+  &.cardio {
+    .block-head{
+      background:$cardio;
+      border-bottom: none;
+      color: $white;  
+    }
+    .block-body {
+      padding: 52px 40px 0px;
+    }
+  }
+  &.strength {
+    .block {
+      &:nth-of-type(3) {
+        h3.title-block {
+          margin-bottom: 10px;
+          padding-top: 0px;
+        }
+      }
+    }
+    .block-head{
+      background:$strength;
+      border-bottom: none;
+      color: $white;  
+    }
+    .block-body {
+      padding: 60px 40px 30px;
+    }
+  }
+}
+.nutrition {
+  .white-block {
+    h3.block-head {
+      border-bottom: 3px solid $borderNutritionBottomColor;
+    }
+  }  
+}
+.cardio {
+  .white-block {
+    h3.block-head {
+      border-bottom: 3px solid $borderCardioBottomColor;
+    }
+  }  
+}
+.strength {
+  .white-block {
+    h3.block-head {
+      border-bottom: 3px solid $borderStrengthBottomColor;
+    }
+  }  
+}
+.biometrics {
+  .white-block {
+    h3.block-head {
+      border-bottom: 3px solid $borderBiometricsBottomColor;
+    }
+  }  
+}
+.transparent-block {
+  border: 1px solid #D0D3D9;
+  margin-top: 57px;
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+
+  .table {
+    tbody {
+      tr {
+        td {
+          padding: 25px 0px 26px 0px;
+          letter-spacing: 0.6px;
+          color: $tableTbodyColor;
+          border-bottom: 1px solid $tableRowBorderColor;
+          &:first-child {
+            padding-left: 60px;
+          }
+        }
+        &:last-child {
+          border-bottom: 0px;
+        }
+      }
+    }
+  }
+}
+
+.title-row {
+  @extend %clearfix;
+  margin-top: 60px;
+  .title-page {
+    color: $titleBlockColor;
+    font-weight: 500;
+    margin-bottom: 6px;
+    padding-top: 6px;
+  }
+  .name{
+    display: inline-block;
+    padding: 0 0 0 65px;
+    color:$headerColor;
+  }
+  .date{
+    min-width: 200px;
+    float: right;
+    text-align: right;
+    padding: 16px 0 0;
+    color:$headerColor;
+  }
+  &.no-header {
+    margin-top: 50px;
+    .title-page {
+      margin-bottom: -6px;
+    }
+  }
+  .float-right {
+    text-align: right;
+    &.search {
+      min-width: 800px;
+    }
+    .secondary {
+      border-radius: 12px;
+      padding: 17px 30px;
+      margin: 6px 0px 0px 26px;
+    }
+    &.current-level {
+      margin-top: 16px;
+      .level {
+        display: inline-block;
+        
+      }
+    }
+    &.current-level.current-points {
+      margin-top: 0px;
+    }
+  }
+}
+.cardio {
+  .title-row {
+    .float-right {
+      .level {
+        color: $titleRowCardioTextRightOfLevelColor;
+      }
+    }
+  }
+}
+.strength {
+  .title-row {
+    .float-right {
+      .level {
+        color: $titleRowStrengthTextRightOfLevelColor;
+      }
+      .points {
+        margin-top: 10px;
+        color: $titleRowStrengthTextRightOfLevelColor;
+        }
+    }
+  }
+}
+
+.column {
+  .button {
+    &.secondary {
+      &.log {
+        visibility: visible;
+      }
+    }
+  }
+  
+}
+.remove_day_block {
+  color: red;
+  display: inline-block;
+  margin-top: 0px;
+  vertical-align: middle;
+  opacity: 0;
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: red;
+    text-decoration: underline;
+  }
+}
+.block-head:hover {
+  .remove_day_block  {
+    opacity: 1;
+  }
+}
+
+.search-area {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 0px;
+  right: -60px;
+  width: 0%;
+  opacity: 0;
+  transition: all 0.3s ease;
+
+  .search-input {
+    color: $tableTbodyColor;
+    display: inline-block;
+    width: 100%;
+    padding-right: 0px;
+    height: 67px;
+    margin-bottom: 0px;
+    vertical-align: bottom;
+    margin-bottom: 0px;
+    border: 0px;
+    background-color: transparent;
+    box-shadow: 0px 0px 0px transparent;
+    border-bottom: 2px solid $inputSearchBorderColor;
+    transition: all 0.5s ease;
+    &:focus {
+      background-color: transparent;
+      border: 0px;
+      box-shadow: 0px 0px 0px transparent;
+      border-bottom: 2px solid red;
+      z-index: 100;
+    }
+  }
+  &.show-search {
+    width: 400px;
+    opacity: 1;
+    .search-input {
+      padding-right: 60px;
+    }
+  }
+  &::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: $inputSearchBorderColor;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transition: all 0.6s ease;
+  }
+  &:hover::after {
+    width: 100%;
+    left: 0%;
+    background-color: $mainMenuClientsItemColor;
+  }
+  
+}
+
+.search-btn {
+  background-image: url('/images/search-icon.svg');
+  display: inline-block;
+  width: 50px;
+  vertical-align: middle;
+  height: 40px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-right: 43px;
+  margin-top: -4px;
+  position: relative;
+  z-index: 300;
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+.tableBottomLine{
+  padding: 52px 0 50px;
+  .delete_table_row {
+    display: inline-block;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    opacity: 0;
+    &.visible {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+  .info{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 43px;
+    color: $infoTextColor;
+    + .button{
+      vertical-align: middle;
+      margin-bottom: 0;
+      padding: 17px 62px;
+    }
+  }
+}
+
+.sub-block{
+  padding: 0px 4px 0px;
+  &:first-child {
+    padding: 6px 4px 0px;
+  }
+  .block-sub-head{
+    padding: 0 4px 0px;
+    letter-spacing: 2.2px;
+    margin-bottom: 38px;
+    color: $titleBlockColor;
+    .text-muted {
+      margin-left: 25px;
+      letter-spacing: 0.6px;
+      color: $titleMutedTextColor;
+    }
+  }
+  .sub-title {
+    padding: 0px 4px;
+    letter-spacing: 1px;
+    color: $subTitleColor;
+    margin-bottom: 28px;
+    margin-top: 34px;
+    &:first-of-type {
+      margin-top: 0px;
+    }
+  }
+  .sub-info-text {
+    padding: 5px 100px 0px 4px;
+    letter-spacing: 0.67px;
+    color: $textColor;
+    margin: 0px;
+  }
+  .radio-info-text {
+    margin-top: 45px;
+    margin-bottom: 26px;
+    text-transform: uppercase;
+    padding: 0px 8px;
+    letter-spacing: 2px;
+    span {
+      margin-right: 18px;
+      color: $yesNoText;
+    }
+  }
+  .yes-no-row {
+    margin-bottom: 26px;
+    &:last-child {
+      margin-bottom: 40px;
+    }
+    span {
+      letter-spacing: 0.7px;
+      color: $formLabelAndSpanColor;
+      display: inline-block;
+      max-width: calc(100% - 110px);
+      vertical-align: top;
+      line-height: 1.65em;
+    }
+  }
+  .sub-row {
+    margin-bottom: 26px;
+    &:last-child {
+      margin-bottom: 0px;
+    }
+    label{
+      width: 100%;
+    }
+  }
+}
+.block{
+
+    h3.title-block {
+      padding-top: 6px;
+      letter-spacing: 0.9px;
+      margin-bottom: 30px;
+      margin-top: 10px;
+      color: $blockHeadColor;
+      padding-left: 0px; //p 12
+      font-weight: 500;
+      &.inside {
+        padding-top: 30px;
+      }
+    }
+}
+.cardio,
+.strength{
+  .block{
+    h3.title-block {
+      padding-top: 6px;
+      letter-spacing: 0.9px;
+      margin-bottom: 40px;
+      margin-top: 0px;
+      color: $blockHeadColor;
+      padding-left: 18px;
+      &:last-of-type {
+        margin-bottom: 10px;
+      }
+      &:first-of-type {
+        margin-bottom: 40px;
+      }
+      &.inside {
+        padding-top: 0px;
+        margin-bottom: 10px;
+      }
+      
+    }
+  }
+}
+
+.cardio,
+.strength,
+.biometrics,
+.nutritions {
+  .cell {
+      // padding-bottom: 30px;
+      border-bottom: 1px solid $tableRowBorderColor;
+      margin-right: 25px;
+      position: relative;
+      margin: 0px 18px 27px;
+      &.no-bordered {
+        border-bottom-color: transparent;
+      }
+      &.mb0 {
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+      }
+      @extend %clearfix;
+      h4 {
+        margin-bottom: 12px;
+        color: $inputLabelColor;
+        
+      }
+      .cell-body {
+        color: $cellBodyColor;
+        width: 100%;
+        height: 52px;
+        line-height: 1.2;
+      }
+      &.strength-cell {
+        .cell-body {
+          &.cell-desc {
+            float: left;
+            width: 75%;
+          }
+          &.cell-value {
+            float: right;
+            width: 25%;
+            color: $inputLabelColor;
+          }
+        }
+      }
+    }
+}
+.safari {
+  .cardio,
+  .strength,
+  .biometrics,
+  .nutritions {
+    .cell {
+      border-bottom-width: 2px;
+    }
+  }
+}
+
+//self assesment
+.self_assesment {
+  .block-body {
+    padding: 34px 60px 20px;
+  }
+}
+
+// client notes
+.client-notes {
+  .block-body {
+    padding: 58px 74px 40px;
+
+    p {
+      letter-spacing: 0.6px;
+      line-height: 1.8;
+      color: $textColor;
+    }
+    .textarea {
+      margin-top: 0px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+
+// week tabs
+.week-tabs {
+  margin-top: 42px;
+  .week-tabs-head {
+    text-transform: uppercase;
+    display: inline-block;
+    vertical-align: middle;
+    letter-spacing: 1.5px;
+    margin-right: 48px;
+    color: $blockHeadColor;
+    font-weight: 500;
+  }
+  ul {
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+    vertical-align: middle;
+    li {
+      list-style: none;
+      display: inline-block;
+      vertical-align: middle;
+      a {
+        display: block;
+        width: 30px;
+        height: 55px;
+        line-height: 55px;
+        text-align: center;
+        margin: 0px 6px;
+        color: $paginationColor;
+        &:hover {
+          color: $mainMenuClientsItemColor;
+        }
+        &.current {
+          width: 55px;
+          height: 55px;
+          display: block;
+          text-align: center;
+          border-radius: 9px;
+          background-color: $mainMenuClientsItemColor;
+          line-height: 55px;
+          color: #ffffff;
+
+          &:hover {
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+  .week-plus {
+    display: inline-block;
+    vertical-align: middle;
+    width: 36px;
+    height: 36px;
+    margin-left: 10px;
+    border-radius: 50%;
+    background-color: #E8EAED;
+    background-image: url('/images/week-plus-icon.svg');
+    background-size: 100%;
+    cursor: pointer;
+    &:hover {
+      background-color: $mainMenuClientsItemColor;
+      background-image: url('/images/week-plus-icon-hover.svg');
+    }
+  }
+}
+
+.download_pdf_container {
+  margin-top: 42px;
+}
+
+// menu navigation of plans
+.plans_menu {
+  padding: 0px;
+  margin: 0px;
+  li {
+    display: block;
+    list-style: none;
+    border-bottom: 1px solid $tableRowBorderColor;
+    &:last-child {
+      border-bottom: 0px;
+    }
+    a {
+      padding: 27px 58px 26px;
+      display: inline-block;
+      letter-spacing: 1px;
+      color: $textColor;
+    }
+  }
+}
+
+.tips {
+  .block-body {
+    padding: 52px 60px 42px;
+  }
+  h4 {
+    color: $blockHeadColor;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 18px;
+    letter-spacing: 0.6px;
+  }
+  p {
+    color: $textColor;
+  }
+}
+
+.change_password {
+  color: $mainMenuClientsItemColor;
+  margin-top: 78px;
+  display: inline-block;
+}
+
+.muscular_system {
+  width: 100%;
+  padding: 30px 0px;
+  border-bottom: 1px solid $tableRowBorderColor;
+  text-align: center;
+
+  a {
+    display: inline-block;
+    max-width: 100%;
+
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+
+
+
+
+// helpers
+@import 'global/helpers';
+// typography
+@import 'global/typography';
+// media
+@import 'global/media';

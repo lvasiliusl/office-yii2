@@ -1,0 +1,1640 @@
+@font-face {
+  font-family: 'whr-icons';
+  src:
+    url('#{$icomoon-font-path}/whr-icons.ttf?z8b54u') format('truetype'),
+    url('#{$icomoon-font-path}/whr-icons.woff?z8b54u') format('woff'),
+    url('#{$icomoon-font-path}/whr-icons.svg?z8b54u#whr-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+// 1920px - 1280px
+
+.icon {
+  &:before {
+      font-family: 'whr-icons' !important;
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+
+      /* Better Font Rendering =========== */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+.icon-cardio {
+  &:before {
+    content: $icon-cardio-icon;
+  }
+}
+.icon-clients {
+  &:before {
+    content: $icon-clients-icon;
+  }
+}
+.icon-cog {
+  &:before {
+    content: $icon-cog-icon;
+  }
+}
+.icon-contact-coach {
+  &:before {
+    content: $icon-contact-coach-icon;
+  }
+}
+.icon-dashboard {
+  &:before {
+    content: $icon-dashboard-icon;
+  }
+}
+.icon-logout {
+  &:before {
+    content: $icon-logout-icon;
+  }
+}
+.icon-nutrition {
+  &:before {
+    content: $icon-nutrition-icon;
+  }
+}
+.icon-strength {
+  &:before {
+    content: $icon-strength-icon;
+  }
+}
+
+p {
+  font-size: calc(14px + 6 * (100vw - 1280px) / 640);
+  color: $textColor;
+  line-height: 1.8;
+  margin-bottom: 94px;
+  letter-spacing: 0.4px;
+  &:last-child {
+    margin-bottom: 38px;
+  }
+}
+h4 {
+  color: $titleBlockColor;
+  margin: 0px 0px 28px;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  font-size: calc(14px + 6 * (100vw - 1280px) / 640);
+}
+h5 {
+  font-size: calc(12px + 6 * (100vw - 1280px) / 640);
+}
+
+.title-row {
+  .title-page {
+    font-size: calc(24px + 12 * (100vw - 1280px) / 640);
+  }
+  .name {
+    font-size: calc(16px + 8 * (100vw - 1280px) / 640);
+    
+    &.search-title {
+        padding-left: 0;
+    }
+  }
+  .date {
+    font-size: calc(14px + 6 * (100vw - 1280px) / 640);
+  }
+  
+}
+.white-block {
+  h3.block-head {
+    font-size: calc(20px + 10 * (100vw - 1280px) / 640);
+    .date {
+      font-size: calc(14px + 6 * (100vw - 1280px) / 640);
+    }
+  }
+  &.biometric {
+    .block-body {
+      .client-biometric {
+        .client-biometric-row {
+          .client-biometric-desc {
+            font-size: calc(14px + 6 * (100vw - 1280px) / 640);
+          }
+          .client-biometric-value {
+            font-size: calc(14px + 6 * (100vw - 1280px) / 640);
+          }
+        }
+      }
+    }
+  }
+}
+.main-menu {
+  .menu {
+    li {
+      a {
+        font-size: calc(14px + 6 * (100vw - 1280px) / 640);
+      }
+    }
+  }
+}
+
+.header {
+  .menu {
+    li {
+      a {
+        font-size: calc(12px + 6 * (100vw - 1280px) / 640);
+      }
+    }
+  }
+}
+
+table {
+  thead {
+    tr {
+      th {
+        font-size: calc(12px + 6 * (100vw - 1280px) / 640);
+      }
+    }
+  }
+  tbody {
+    tr {
+      td {
+        font-size: calc(14px + 6 * (100vw - 1280px) / 640);
+      }
+    }
+  }
+}
+.tableBottomLine {
+  .info {
+    font-size: calc(12px + 6 * (100vw - 1280px) / 640);
+  }
+}
+.pagination {
+  li {
+    font-size: calc(14px + 8 * (100vw - 1280px) / 640);
+  }
+}
+
+.sub-block {
+  .block-sub-head {
+    font-size: calc(14px + 6 * (100vw - 1280px) / 640);
+  }
+  & > .text-muted {
+    font-size: calc(14px + 6 * (100vw - 1280px) / 640);
+  }
+  .sub-title {
+    font-size: calc(12px + 4 * (100vw - 1280px) / 640);
+  }
+  .radio-info-text {
+    span {
+      font-size: calc(10px + 4 * (100vw - 1280px) / 640);
+    }
+  }
+  .yes-no-row {
+    span {
+      font-size: calc(14px + 6 * (100vw - 1280px) / 640);
+    }
+  }
+}
+
+.block {
+  h3.title-block {
+    font-size: calc(14px + 8 * (100vw - 1280px) / 640);
+  }
+}
+.cell {
+   h4 {
+    font-size: calc(12px + 6 * (100vw - 1280px) / 640);
+   }
+  .cell-body {
+    font-size: calc(14px + 6 * (100vw - 1280px) / 640);
+  }
+}
+
+// forms & buttons
+
+.button {
+  &.btn-large {
+    font-size: calc(14px + 8 * (100vw - 1280px) / 640);
+  }
+  &.btn-secondary {
+      border-radius: 16px;
+      padding: 17px 30px;
+  }
+  &.btn-medium {
+      font-size: calc(12px + 6 * (100vw - 1280px) / 640);
+  }
+  &.secondary {
+    font-size: calc(12px + 6 * (100vw - 1280px) / 640);
+
+    &.add-new-day {
+      font-size: calc(14px + 6 * (100vw - 1280px) / 640);
+    }
+    &.add-new-day-block {
+      font-size: calc(14px + 6 * (100vw - 1280px) / 640);
+    }
+    &.add-new-exercise {
+      font-size: calc(12px + 6 * (100vw - 1280px) / 640);
+    }
+  }
+}
+
+label {
+  font-size: calc(12px + 6 * (100vw - 1280px) / 640);
+  h4 {
+    font-size: calc(14px + 6 * (100vw - 1280px) / 640);
+  }
+}
+
+input[type=checkbox],
+input[type=radio]
+ {
+  & + label {
+    span {
+      font-size: calc(14px + 6 * (100vw - 1280px) / 640);
+    }
+  }
+}
+.invisible-input {
+    display: inline;
+    width: auto;
+    
+    .help-block {
+        display: none;
+        margin: 0;
+    }
+    
+    &.has-error {
+        .help-block {
+            display: block;
+        }
+    }
+}
+
+.editable-input {
+    display: block;
+    clear: left;
+    
+    .help-block {
+        margin-bottom: 0;
+    }
+}
+input[type=email], input[type=text], input[type=url], input[type=password], input[type=tel] {
+  font-size: calc(14px + 6 * (100vw - 1280px) / 640);
+  
+  .invisible-input > & {
+        margin: 0;
+        background: none;
+        padding: 0;
+        font-family: inherit;
+        font-size: inherit;
+        color: inherit;
+        display: inline;
+        color: inherit;
+        -webkit-text-fill-color: inherit;
+        height: auto;
+        width: auto;
+        border: none;
+    }
+}
+.textarea {
+  font-size: calc(14px + 6 * (100vw - 1280px) / 640);
+}
+
+.select_wrapper {
+  select {
+    font-size: calc(14px + 6 * (100vw - 1280px) / 640);
+  }
+}
+.select2 {
+  font-size: calc(14px + 6 * (100vw - 1280px) / 640);
+}
+.select2-container--default {
+  .select2-results__option {
+    font-size: calc(14px + 6 * (100vw - 1280px) / 640);
+  }
+}
+.search-area {
+  .search-input {
+    font-size: calc(16px + 6 * (100vw - 1280px) / 640)
+  }
+}
+
+.plans_menu li a {
+  font-size: calc(14px + 6 * (100vw - 1280px) / 640);
+  display: block;
+}
+// week tabs
+.week-tabs {
+  .week-tabs-head {
+    font-size: calc(12px + 6 * (100vw - 1280px) / 640);
+  }
+  ul {
+    li {
+      a {
+        font-size: calc(14px + 6 * (100vw - 1280px) / 640);
+      }
+    }
+  }
+}
+
+.remove_day_block {
+  font-size: calc(12px + 6 * (100vw - 1280px) / 640);
+}
+
+// calendar
+#months-cont {
+  #months {
+    .month {
+      font-size: calc(14px + 6 * (100vw - 1280px) / 640);
+    }
+  }
+}
+#calendar {
+  table {
+     #days {
+       tr {
+         td {
+           font-size: calc(18px + 10 * (100vw - 1280px) / 640);
+         }
+       }
+     }
+  }
+}
+
+
+// accordion
+.accordion {
+  .accordion-item {
+    .accordion-title {
+      font-size: calc(12px + 8 * (100vw - 1280px) / 640);
+    }
+    .accordion-content {
+      .accordion-text {
+        h4 {
+          font-size: calc(14px + 6 * (100vw - 1280px) / 640);
+        }
+      }
+    }
+    .remove_accordion-item {
+      font-size: calc(14px + 6 * (100vw - 1280px) / 640);
+    }
+  }
+}
+
+
+.reveal {
+  .exercises_completed_area {
+    .exercises_completed {
+      li {
+        &:nth-of-type(1) {
+          .number {
+            font-size: calc(14px + 6 * (100vw - 1280px) / 640);
+          }
+        }
+      }
+    }
+  }
+}
+
+// login page
+
+.login-container {
+  .login-area {
+    .white-block {
+      .login-body {
+        .forgot-pass {
+          font-size: calc(12px + 6 * (100vw - 1280px) / 640);
+        }
+      }
+      .login-btn {
+        font-size: calc(14px + 8 * (100vw - 1280px) / 640);
+      }
+    }
+  }
+}
+.gallery {
+  li {
+    a {
+      p {
+        font-size: calc(12px + 6 * (100vw - 1280px) / 640);
+      }
+    }
+  }
+}
+.change_password {
+  font-size: calc(14px + 6 * (100vw - 1280px) / 640);
+}
+.title-row {
+  .float-right {
+    &.current-level {
+      .level {
+        font-size: calc(16px + 6 * (100vw - 1280px) / 640);
+      }
+    }
+  }
+}
+.pagination {
+  li {
+    font-size: calc(14px + 8 * (100vw - 1280px) / 640);
+  } 
+}
+.white-block {
+  &.perfomance-chart {
+    .block-body {
+      .ct_chart_wrapper {
+        &::before {
+          font-size: calc(12px + 6 * (100vw - 1280px) / 640);
+        }
+      }
+    }
+  }
+}
+.yAxis-labels {
+  span {
+    font-size: calc(12px + 6 * (100vw - 1280px) / 640);
+  }
+}
+.xAxis-labels {
+  span {
+    font-size: calc(12px + 6 * (100vw - 1280px) / 640);
+  }
+}
+.tooltipster-sidetip {
+  .tooltipster-box {
+    .tooltipster-content {
+      font-size: calc(14px + 6 * (100vw - 1280px) / 640);
+    }
+  }
+}
+
+
+
+// 1280 - 
+
+@media screen and (max-width: 1280px) {
+  p {
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 94px;
+    letter-spacing: 0.4px;
+    &:last-child {
+      margin-bottom: 38px;
+    }
+  }
+  h4 {
+    margin: 0px 0px 28px;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    font-size: 14px;
+  }
+  h5 {
+    font-size: 12px;
+  }
+
+  .title-row {
+    .title-page {
+      font-size: 24px;
+    }
+    .name {
+      font-size: 16px;
+    }
+    .date {
+      font-size: 16px;
+    }
+    .float-right {
+      &.current-level {
+        &.current-points {
+          .points {
+            font-size: calc(14px + 6 * (100vw - 1280px) / 640);
+          }
+        }
+      }
+    }
+  }
+  .white-block {
+    h3.block-head {
+      font-size: 20px;
+      .date {
+        font-size: 14px;
+      }
+    }
+    &.biometric {
+      .block-body {
+        .client-biometric {
+          .client-biometric-row {
+            .client-biometric-desc {
+              font-size: 14px;
+            }
+            .client-biometric-value {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .main-menu {
+    .menu {
+      li {
+        a {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .header {
+    .menu {
+      li {
+        a {
+          font-size: 12px;
+        }
+      }
+    }
+    .mobile-menu-current-page {
+      font-size: calc(12px + 6 * (100vw - 640px) / 640);
+    }
+  }
+
+  table {
+    thead {
+      tr {
+        th {
+          font-size: 12px;
+        }
+      }
+    }
+    tbody {
+      tr {
+        td {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .tableBottomLine {
+    .info {
+      font-size: 12px;
+    }
+  }
+  .pagination {
+    li {
+      font-size: 14px;
+    }
+  }
+
+  .sub-block {
+    .block-sub-head {
+      font-size: 14px;
+    }
+    & > .text-muted {
+      font-size: 14px;
+    }
+    .sub-title {
+      font-size: 12px;
+    }
+    .radio-info-text {
+      span {
+        font-size: 10px;
+      }
+    }
+    .yes-no-row {
+      span {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .block {
+    h3.title-block {
+      font-size: 14px;
+    }
+  }
+  .cell {
+    h4 {
+      font-size: 12px;
+    }
+    .cell-body {
+      font-size: 14px;
+    }
+  }
+
+  // forms & buttons
+
+  .button {
+    &.btn-large {
+      font-size: 14px;
+    }
+    &.secondary {
+      font-size: 12px;
+
+      &.add-new-day {
+        font-size: 14px;
+      }
+      &.add-new-day-block {
+        font-size: 14px;
+      }
+      &.add-new-exercise {
+        font-size: 12px;
+      }
+    }
+  }
+
+  label {
+    font-size: 12px;
+    h4 {
+      font-size: 14px;
+    }
+  }
+
+  input[type=checkbox],
+  input[type=radio]
+  {
+    & + label {
+      span {
+        font-size: 14px;
+      }
+    }
+  }
+  input[type=email], input[type=text], input[type=url], input[type=password], input[type=tel] {
+    font-size: 14px;
+  }
+  .textarea {
+    font-size: 14px;
+  }
+
+  .select_wrapper {
+    select {
+      font-size: 14px;
+    }
+  }
+  .select2 {
+    font-size: 14px;
+  }
+  .select2-container--default {
+    .select2-results__option {
+      font-size: 14px;
+    }
+  }
+  .search-area {
+    .search-input {
+      font-size: 16px;
+    }
+  }
+
+  .plans_menu li a {
+    font-size: 14px;
+  }
+  // week tabs
+  .week-tabs {
+    .week-tabs-head {
+      font-size: 12px;
+    }
+    ul {
+      li {
+        a {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .remove_day_block {
+    font-size: 12px;
+  }
+
+  // calendar
+  #months-cont {
+    #months {
+      .month {
+        font-size: 14px;
+      }
+    }
+  }
+  #calendar {
+    table {
+      #days {
+        tr {
+          td {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+
+
+  // accordion
+  .accordion {
+    .accordion-item {
+      .accordion-title {
+        font-size: 12px;
+      }
+      .accordion-content {
+        .accordion-text {
+          h4 {
+            font-size: 14px;
+          }
+        }
+      }
+      .remove_accordion-item {
+        font-size: 14px;
+      }
+    }
+  }
+
+
+  .reveal {
+    .exercises_completed_area {
+      .exercises_completed {
+        li {
+          &:nth-of-type(1) {
+            .number {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+ 
+
+  // login page
+
+  .login-container {
+    .login-area {
+      .white-block {
+        .login-body {
+          .forgot-pass {
+            font-size: 12px;
+          }
+        }
+        .login-btn {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .gallery {
+    li {
+      a {
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .change_password {
+    font-size: 14px;
+  }
+  .title-row {
+    .float-right {
+      &.current-level {
+        .level {
+          font-size: 16px;
+        }
+        &.current-points {
+          .points {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  .pagination {
+    li {
+      font-size: 14px;
+    } 
+  }
+  .white-block {
+    &.perfomance-chart {
+      .block-body {
+        .ct_chart_wrapper {
+          &::before {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+  .yAxis-labels {
+    span {
+      font-size: 12px;
+    }
+  }
+  .xAxis-labels {
+    span {
+      font-size: 12px;
+    }
+  }
+  .tooltipster-sidetip {
+    .tooltipster-box {
+      .tooltipster-content {
+        font-size: 14px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+    .header {
+      .mobile-menu-current-page {
+        span {
+          font-size: 24px;
+        }
+      }
+    }
+    .white-block {
+       h3.block-head {
+         font-size: 28px;
+       }
+      .table {
+        &.mobile-accordion {
+          tbody {
+            tr {
+              td {
+                font-size: 28px;
+                .table-header {
+                  font-size: 28px;
+                }
+              }
+            }
+          }
+        }
+        &.mobile-accordion-custom-header {
+          tbody {
+            tr {
+              td {
+                font-size: 28px;
+                .table-header {
+                  font-size: 28px;
+                }
+              }
+            }
+          }
+        }
+        &.mobile-table-block {
+          tbody {
+            tr {
+              td {
+                font-size: 28px;
+              }
+            }
+          }
+        }
+      }
+      &.biometric {
+        .block-body {
+          .client-biometric {
+            .client-biometric-row {
+              .client-biometric-desc {
+                font-size: 28px;
+              }
+              .client-biometric-value {
+                font-size: 28px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .transparent-block {
+      .table {
+        &.mobile-custom-accordion {
+          tbody {
+            tr {
+              td {
+                font-size: 28px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .title-row {
+      .title-page {
+        font-size: 28px;
+      }
+      .name {
+        font-size: 28px;
+      }
+      .date {
+        font-size: 28px;
+      }
+      .float-right {
+        &.current-level {
+          .level {
+            font-size: 28px;
+          }
+          &.current-points {
+            .points {
+              font-size: 28px;
+            }
+          }
+        }
+      }
+    }
+    label {
+      font-size: 28px;  
+      h4 {
+        font-size: 28px;
+      }
+    }
+    .select_wrapper {
+      select {
+        font-size: 28px;
+      }
+    }
+    input[type=email], input[type=text], input[type=url], input[type=password], input[type=tel] {
+      font-size: 28px;
+    }
+    .textarea {
+      font-size: 28px;
+    }
+    .button {
+      &.btn-large {
+        font-size: 28px;
+        &.btn-submit {
+          
+        }
+      }
+      &.secondary {
+        font-size: 24px;
+        &.add-new-day {
+          font-size: 28px;
+        }
+        &.add-new-exercise {
+          font-size: 28px;
+        }
+        &.add-new-day-block {
+          font-size: 24px;
+        }
+        &.add-another-alternate {
+          font-size: 24px;
+        }
+      }
+    }
+    input[type=checkbox] {
+      & + label {
+        span {
+          font-size: 28px;
+        }
+      }
+    }
+    input[type=radio] {
+      & + label {
+        span {
+          font-size: 28px;
+        }
+      }
+    }
+    .sub-block {
+      .block-sub-head {
+        font-size: 28px;
+      }
+      .sub-title {
+        font-size: 24px;
+      }
+      .radio-info-text {
+        span {
+          font-size: 20px;
+        }
+      }
+      .yes-no-row {
+        span {
+          font-size: 28px;
+        }
+      }
+    }
+    .block {
+      h3.title-block {
+        font-size: 28px;
+      }
+    }
+    .cell {
+      h4 {
+        font-size: 28px;
+      }
+      .cell-body {
+        font-size: 28px;
+      }
+    }
+    .calendar {
+      #months-cont {
+        #months {
+          .month {
+            font-size: 28px;
+          }
+        }
+      }
+    }
+    #calendar {
+      table {
+        thead {
+          tr {
+            th {
+              font-size: 22px;
+            }
+          }
+        }
+        tbody#days {
+          tr {
+            td {
+              font-size: 28px;
+            }
+          }
+        }
+      }
+    }
+    p {
+      font-size: 28px;
+    }
+    h4 {
+      font-size: 28px;
+    }
+    .accordion {
+      .accordion-item {
+        .accordion-title {
+          font-size: 28px;
+        }
+        .accordion-content {
+          .accordion-text {
+            h4 {
+              font-size: 28px;
+            }
+          }
+        }
+        .remove_accordion-item {
+          font-size: 20px;
+        }
+      }
+      
+    }
+    .remove_day_block {
+      font-size: 20px;
+    }
+    .yAxis-labels {
+      span {
+        font-size: 24px;
+      }
+    }
+    .xAxis-labels {
+      span {
+        font-size: 24px;
+      }
+    }
+    .select2 {
+      font-size: 28px;  
+    }
+    .select2-container--default {
+      .select2-results__option {
+        font-size: 20px;
+      }
+    }
+    .white-block {
+      &.perfomance-chart {
+        .block-body {
+          .ct_chart_wrapper {
+            &::before {
+              font-size: 24px;
+            }
+          }
+        }
+      }
+    }
+    .tooltipster-sidetip {
+      .tooltipster-box {
+        .tooltipster-content {
+          font-size: 28px;
+        }
+      }
+    }
+    
+    .week-tabs {
+      .week-tabs-head {
+        font-size: 24px;
+      }
+      ul {
+        li {
+          a {
+            font-size: 28px;
+          }
+        }
+      }
+    }
+
+    .main-menu {
+      .menu {
+        li {
+          a {
+            font-size: 28px;
+          }
+        }
+      }
+    }
+    .plans_menu {
+      li {
+        a {
+          font-size: 28px;
+        }
+      }
+    }
+    .login-container {
+      .login-area {
+        .white-block {
+          .login-body {
+            label {
+              font-size: 24px;
+            }
+            .forgot-pass {
+              font-size: 24px;
+            }
+          }
+          .login-btn {
+            font-size: 28px;
+          }
+        }
+      }
+    }
+    .gallery {
+      li {
+        a {
+          p {
+            font-size: 28px;
+          }
+        }
+      }
+    }
+    .reveal {
+      .exercises_suggested {
+        li {
+          h5 {
+            font-size: 24px;
+          }
+        }
+      }
+      .exercises_completed_area {
+        .exercises_completed {
+          li {
+            &:nth-of-type(1) {
+              .number {
+                font-size: 24px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .change_password {
+      font-size: 28px;
+    }
+    .pagination {
+      li {
+        font-size: 28px;
+      }
+    }
+    .tableBottomLine {
+      .info {
+        font-size: 24px;
+      }
+    }
+    .show_more {
+      font-size: 28px;
+    }
+    
+  }
+
+  
+@media screen and (max-width: 639px) {
+  .header {
+      .mobile-menu-current-page {
+        span {
+          font-size: calc(14px + 10 * (100vw - 320px) / 320);
+        }
+      }
+    }
+    .white-block {
+       h3.block-head {
+         font-size: calc(16px + 12 * (100vw - 320px) / 320);
+       }
+      .table {
+        &.mobile-accordion {
+          tbody {
+            tr {
+              td {
+                font-size: calc(14px + 14 * (100vw - 320px) / 320);
+                .table-header {
+                  font-size: calc(14px + 14 * (100vw - 320px) / 320);
+                }
+              }
+            }
+          }
+        }
+        &.mobile-accordion-custom-header {
+          tbody {
+            tr {
+              td {
+                font-size: calc(14px + 14 * (100vw - 320px) / 320);
+                .table-header {
+                  font-size: calc(14px + 14 * (100vw - 320px) / 320);
+                }
+              }
+            }
+          }
+        }
+        &.mobile-table-block {
+          tbody {
+            tr {
+              td {
+                font-size: calc(14px + 14 * (100vw - 320px) / 320);
+              }
+            }
+          }
+        }
+      }
+      &.biometric {
+        .block-body {
+          .client-biometric {
+            .client-biometric-row {
+              .client-biometric-desc {
+                font-size: calc(14px + 14 * (100vw - 320px) / 320);
+              }
+              .client-biometric-value {
+                font-size: calc(14px + 14 * (100vw - 320px) / 320);
+              }
+            }
+          }
+        }
+      }
+    }
+    .transparent-block {
+      .table {
+        &.mobile-custom-accordion {
+          tbody {
+            tr {
+              td {
+                font-size: calc(14px + 14 * (100vw - 320px) / 320);
+              }
+            }
+          }
+        }
+      }
+    }
+    .title-row {
+      .title-page {
+        font-size: calc(16px + 12 * (100vw - 320px) / 320);
+      }
+      .name {
+        font-size: calc(14px + 14 * (100vw - 320px) / 320);
+      }
+      .date {
+        font-size: calc(14px + 14 * (100vw - 320px) / 320);
+      }
+      .float-right {
+        &.current-level {
+          .level {
+            font-size: calc(14px + 14 * (100vw - 320px) / 320);
+          }
+          &.current-points {
+            .points {
+              font-size: calc(14px + 14 * (100vw - 320px) / 320);
+            }
+          }
+        }
+      }
+    }
+    label {
+      font-size: calc(14px + 14 * (100vw - 320px) / 320);  
+      h4 {
+        font-size: calc(14px + 14 * (100vw - 320px) / 320);
+      }
+    }
+    .select_wrapper {
+      select {
+        font-size: calc(14px + 14 * (100vw - 320px) / 320);
+      }
+    }
+    input[type=email], input[type=text], input[type=url], input[type=password], input[type=tel] {
+      font-size: calc(14px + 14 * (100vw - 320px) / 320);
+    }
+    .textarea {
+      font-size: calc(14px + 14 * (100vw - 320px) / 320);
+    }
+    .button {
+      &.btn-large {
+        font-size: calc(14px + 14 * (100vw - 320px) / 320);
+        &.btn-submit {
+          
+        }
+      }
+      &.secondary {
+        font-size: calc(14px + 10 * (100vw - 320px) / 320);
+        &.add-new-day {
+          font-size: calc(14px + 14 * (100vw - 320px) / 320);
+        }
+        &.add-new-exercise {
+          font-size: calc(14px + 14 * (100vw - 320px) / 320);
+        }
+        &.add-new-day-block {
+          font-size: calc(14px + 10 * (100vw - 320px) / 320);
+        }
+        &.add-another-alternate {
+          font-size: calc(14px + 10 * (100vw - 320px) / 320);
+        }
+      }
+    }
+    input[type=checkbox] {
+      & + label {
+        span {
+          font-size: calc(14px + 14 * (100vw - 320px) / 320);
+        }
+      }
+    }
+    input[type=radio] {
+      & + label {
+        span {
+          font-size: calc(14px + 14 * (100vw - 320px) / 320);
+        }
+      }
+    }
+    .sub-block {
+      .block-sub-head {
+        font-size: calc(14px + 14 * (100vw - 320px) / 320);
+      }
+      .sub-title {
+        font-size: calc(14px + 10 * (100vw - 320px) / 320);
+      }
+      .radio-info-text {
+        span {
+          font-size: calc(14px + 6 * (100vw - 320px) / 320);
+        }
+      }
+      .yes-no-row {
+        span {
+          font-size: calc(14px + 14 * (100vw - 320px) / 320);
+        }
+      }
+    }
+    .block {
+      h3.title-block {
+        font-size: calc(14px + 14 * (100vw - 320px) / 320);
+      }
+    }
+    .cell {
+      h4 {
+        font-size: calc(14px + 14 * (100vw - 320px) / 320);
+      }
+      .cell-body {
+        font-size: calc(14px + 14 * (100vw - 320px) / 320);
+      }
+    }
+    .calendar {
+      #months-cont {
+        #months {
+          .month {
+            font-size: calc(14px + 14 * (100vw - 320px) / 320);
+          }
+        }
+      }
+    }
+    #calendar {
+      table {
+        thead {
+          tr {
+            th {
+              font-size: calc(14px + 8 * (100vw - 320px) / 320);
+            }
+          }
+        }
+        tbody#days {
+          tr {
+            td {
+              font-size: calc(14px + 14 * (100vw - 320px) / 320);
+            }
+          }
+        }
+      }
+    }
+    p {
+      font-size: calc(14px + 14 * (100vw - 320px) / 320);
+    }
+    h4 {
+      font-size: calc(14px + 14 * (100vw - 320px) / 320);
+    }
+    .accordion {
+      .accordion-item {
+        .accordion-title {
+          font-size: calc(14px + 14 * (100vw - 320px) / 320);
+        }
+        .accordion-content {
+          .accordion-text {
+            h4 {
+              font-size: calc(14px + 14 * (100vw - 320px) / 320);
+            }
+          }
+        }
+        .remove_accordion-item {
+          font-size: calc(14px + 8 * (100vw - 320px) / 320);
+        }
+      }
+      
+    }
+    .remove_day_block {
+      font-size: calc(14px + 8 * (100vw - 320px) / 320);
+    }
+    .yAxis-labels {
+      span {
+        font-size: 14px;
+      }
+    }
+    .xAxis-labels {
+      span {
+        font-size: 14px;
+      }
+    }
+    .select2 {
+      font-size: calc(12px + 16 * (100vw - 320px) / 320); 
+    }
+    .select2-container--default {
+      .select2-results__option {
+        font-size: calc(12px + 16 * (100vw - 320px) / 320);
+      }
+    }
+    .white-block {
+      &.perfomance-chart {
+        .block-body {
+          .ct_chart_wrapper {
+            &::before {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+    .tooltipster-sidetip {
+      .tooltipster-box {
+        .tooltipster-content {
+          font-size: calc(14px + 14 * (100vw - 320px) / 320);
+        }
+      }
+    }
+    
+    .week-tabs {
+      .week-tabs-head {
+        font-size: calc(14px + 10 * (100vw - 320px) / 320);
+      }
+      ul {
+        li {
+          a {
+            font-size: calc(14px + 14 * (100vw - 320px) / 320);
+          }
+        }
+      }
+    }
+
+    .main-menu {
+      .menu {
+        li {
+          a {
+            font-size: calc(14px + 14 * (100vw - 320px) / 320);
+          }
+        }
+      }
+    }
+    .plans_menu {
+      li {
+        a {
+          font-size: calc(14px + 14 * (100vw - 320px) / 320);
+        }
+      }
+    }
+    .login-container {
+      .login-area {
+        .white-block {
+          .login-body {
+            label {
+              font-size: calc(14px + 10 * (100vw - 320px) / 320);
+            }
+            .forgot-pass {
+              font-size: calc(14px + 10 * (100vw - 320px) / 320);
+            }
+          }
+          .login-btn {
+            font-size: calc(14px + 14 * (100vw - 320px) / 320);
+          }
+        }
+      }
+    }
+    .gallery {
+      li {
+        a {
+          p {
+            font-size: calc(14px + 14 * (100vw - 320px) / 320);
+          }
+        }
+      }
+    }
+    .reveal {
+      .exercises_suggested {
+        li {
+          h5 {
+            font-size: calc(14px + 10 * (100vw - 320px) / 320);
+          }
+        }
+      }
+      .exercises_completed_area {
+        .exercises_completed {
+          li {
+            &:nth-of-type(1) {
+              .number {
+                font-size: calc(14px + 10 * (100vw - 320px) / 320);
+              }
+            }
+          }
+        }
+      }
+    }
+    .change_password {
+      font-size: calc(14px + 14 * (100vw - 320px) / 320);
+    }
+    .pagination {
+      li {
+        font-size: calc(14px + 14 * (100vw - 320px) / 320);
+      }
+    }
+    .tableBottomLine {
+      .info {
+        font-size: calc(14px + 10 * (100vw - 320px) / 320) !important;
+      }
+    }
+    .show_more {
+      font-size: calc(14px + 14 * (100vw - 320px) / 320);
+    }
+}
+
+.button {
+  border-radius: 9px;
+  padding: 14px 31px;
+  margin-bottom: 0px;
+  &.btn-large {
+    border-radius: 12px;
+    padding: 22px 45px;
+  }
+  &.btn-submit {
+    margin-top: 58px;
+    margin-bottom: 50px;
+    min-width: 250px;
+    &.generate-plan {
+      margin-top: 10px;
+      margin-bottom: 50px;
+    }
+  }
+  &.btn-complete {
+    margin-top: 25px;
+    margin-bottom: 50px;
+    min-width: 250px;
+    border-radius: 12px;
+    padding: 22px 25px;
+  }
+  &.alert{
+    background: $mainMenuClientsItemColor;
+  }
+  &.secondary {
+    background-color: $tableBottomLineBtnBgColor;
+    color: $tableBottomLineBtnColor;
+    border-radius: 16px;
+    padding: 17px 30px;
+
+    &.add-new-day {
+      margin: 30px 0px;
+    }
+    &.add-new-day-block {
+      margin: 58px 0px 0px;
+      padding: 24px 52px;
+    }
+    &.add-new-exercise {
+      margin: 30px 0px;
+    }
+    &.add-another-alternate {
+      margin: 20px 0px 30px;
+    }
+    &.dark {
+      background-color: $darkBtnBgColor;
+      margin-top: 76px;
+      &:hover {
+        background-color: $tableBottomLineBtnBgColor;
+      }
+    }
+    &.log {
+      padding: 17px 50px;
+      visibility: hidden;
+      transition: all 0.3s ease;
+    }
+    &.add-set {
+      margin-top: 35px;
+    }
+    &.select-alternate {
+      margin-left: 30px;
+      vertical-align: middle;
+      display: inline-block;
+      margin-bottom: 0px;
+    }
+  }
+}

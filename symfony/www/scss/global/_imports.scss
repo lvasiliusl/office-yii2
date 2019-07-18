@@ -1,0 +1,10 @@
+// Import modules
+@import '../blocks/tooltipster';
+@import '../blocks/mCustomScrollbar';
+@import '../layout/plans';
+@import '../../node_modules/select2/src/scss/core.scss';
+@import '../../vendor/foundation-datepicker/scss/foundation-datepicker.scss';
+@import '../../vendor/foundation-sites/scss/foundation';
+
+// TODO: Include only those files that are needed
+@include foundation-everything(true); // include everything of foundation with flexbox: true

@@ -1,0 +1,3 @@
+cmd: "cd ./symfony && php bin/console cache:clear"
+name: "Clear Cache"
+sh: true,

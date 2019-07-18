@@ -1,0 +1,29 @@
+.datepicker.dropdown-menu {
+  border: 1px solid #E8EAED;
+  color: #7B8190;
+  
+  .button {
+    display: none;
+  }
+  th {
+    font-size: 16px;
+    color: #7B8190;
+  }
+  td {
+    font-size: 16px;
+    span {
+      &.active {
+        background: #ef3e3b;
+        color: #ffffff;
+        font-size: 16px;
+      }
+    }
+    &.active {
+      &.day {
+        background: #ef3e3b;
+        color: #ffffff;
+        font-size: 16px;
+      }
+    }
+  }
+}

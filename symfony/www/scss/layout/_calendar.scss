@@ -1,0 +1,229 @@
+.calendar {
+  #prevMt, #nextMt {
+    display: inline-block;
+    vertical-align: top;
+    height: 38px;
+    width: 40px;
+    line-height: 38px;
+    padding: 0px;
+    cursor: pointer;
+    background-position: center center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+  #prevMt {
+    background-image: url('/images/calendar-arrow-left.svg');
+    left: 20px;
+  }
+  #nextMt {
+    background-image: url('/images/calendar-arrow-right.svg');
+  }
+  &:not(.ready) {
+    #prevMt {
+      opacity: 0;
+    }
+    #months-cont {
+      opacity: 0;
+    }
+    #nextMt {
+      opacity: 0;
+    }
+  }
+}
+
+
+#months-cont {
+  position: relative;
+  width: 170px;
+  height: 38px;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: top;
+  left: 10px;
+  #months {
+    width: 100%;
+    position: relative;
+    height: 100%;
+
+    .month {
+      width: 100%;
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: all 0.3s ease;
+      text-align: center;
+      height: 0px;
+      line-height: 38px;
+      overflow: hidden;
+      opacity: 0;
+      color: $titleBlockRightColor;
+
+      &.active {
+        height: 30px;
+        top: 0;
+        left: 0;
+        opacity: 1;
+      }
+      .year {
+        display: inline;
+      }
+    }
+  }
+}
+#calendar {
+  width: 100%;
+  table {
+    margin-bottom: 0px;
+    border-collapse: collapse;
+    transition: all 1s ease;
+    table-layout:fixed;
+    thead {
+      tr {
+        th {
+          text-transform: uppercase;
+          font-weight: 400;
+          padding: 28px 0px;
+          letter-spacing: 2px;
+          background-color: #D0D3D9;
+          color: #ffffff;
+          text-align: center;
+          border: 1px solid #d0d3d9;
+        }
+      }
+    }
+    tbody#days {
+      width: 100%;
+      tr {
+        td {
+          width: calc(100% / 7);
+          height: 135px;
+          line-height: 100%;
+          margin: 0px;
+          text-align: center;
+          border: 1px solid $tableRowBorderColor;
+          position: relative;
+          font-weight: 400;
+          color: #798292;
+          cursor: default;
+          position: relative;
+
+          .today {
+            background-color: $mainMenuClientsItemColor;
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            border-radius: 50%;
+            color: #ffffff;
+          }
+          i {
+            &:nth-of-type(1) {
+              height: 45px;
+              top: 0px;
+            }
+            &:nth-of-type(2) {
+              height: 45px;
+              top: 45px;
+            }
+            &:nth-of-type(3) {
+              height: 45px;
+              top: 90px;
+            }
+          }
+          .label-nutrition {
+            position: absolute;
+            right: 0;
+            width: 12px;
+            height: 33.3333%;
+            background-color: $mainMenuNutritionItemColor;
+          }
+          .label-cardio {
+            position: absolute;
+            right: 0;
+            width: 12px;
+            height: 33.3333%;
+            background-color: $mainMenuCardioItemColor;
+          }
+          .label-strength {
+            position: absolute;
+            right: 0;
+            width: 12px;
+            height: 33.3333%;
+            background-color: $mainMenuStrengthItemColor;
+          }
+          
+          
+        }
+      }
+    }
+
+  }
+}
+
+#preloader {
+    position:absolute;
+    top:0px;
+    left:50%;
+    width: 100px;
+    height: 30px;
+    z-index:99;
+    transform: translate(-50%, 0px);
+    .spinner {
+      margin: 56px auto;
+      width: 50px;
+      height: 30px;
+      text-align: center;
+      font-size: 10px; // fix
+
+      & > span {
+        display: inline-block;
+        background-color: #D0D3D9;
+        height: 100%;
+        width: 6px;
+        display: inline-block;
+        -webkit-animation: stretchdelay 1.2s infinite ease-in-out;
+        animation: stretchdelay 1.2s infinite ease-in-out;
+
+        &.rect2 {
+          -webkit-animation-delay: -1.1s;
+          animation-delay: -1.1s;
+        } 
+        &.rect3 {
+          -webkit-animation-delay: -1.0s;
+          animation-delay: -1.0s;
+        }
+        &.rect4 {
+          -webkit-animation-delay: -0.9s;
+          animation-delay: -0.9s;
+        } 
+        &.rect4 {
+          -webkit-animation-delay: -0.8s;
+          animation-delay: -0.8s;
+        }
+      }
+    }
+}
+
+
+
+@-webkit-keyframes stretchdelay {
+  0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
+  20% { -webkit-transform: scaleY(1.0) }
+}
+
+@keyframes stretchdelay {
+  0%, 40%, 100% { 
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  }  20% { 
+    transform: scaleY(1.0);
+    -webkit-transform: scaleY(1.0);
+  }
+}
+
+

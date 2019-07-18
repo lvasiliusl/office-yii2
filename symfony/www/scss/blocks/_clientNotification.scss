@@ -1,0 +1,33 @@
+.client_notification {
+  background-color: $mainMenuClientsItemColor;
+  margin-top: 90px;
+  padding: 20px 40px;
+  border-radius: 12px;
+  position: relative;
+  opacity: 1;
+  .notification_body {
+    overflow: hidden;
+    p {
+      margin-bottom: 36px;
+      line-height: 1.75em;
+      color: #ffffff;
+      letter-spacing: 0.61px;
+
+      &:last-child {
+        margin-bottom: 0px;
+      }
+    }
+  }
+  .close_notification {
+    background-image: url('/images/close-notification.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: calc(50% - 15px);
+    right: 30px;
+    cursor: pointer;
+  }
+}

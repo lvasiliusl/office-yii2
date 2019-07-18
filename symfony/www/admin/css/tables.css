@@ -1,0 +1,43 @@
+.float-left{
+    float: left;
+}
+
+.float-right{
+    float: right;
+}
+
+
+.dataTables_filter>label{
+    display: flex;
+    align-items: center;
+}
+a.btn.btn-primary.btn-addon.m-b-sm.btn-rounded{
+    display: block;
+}
+
+.panel .panel-heading{
+    height: auto;
+}
+
+h2.centered{
+    margin: 0 auto;
+}
+
+.btn-block .add-button{
+    width: auto;
+    max-width: 100px;
+}
+
+/*Single Client*/
+.client-profile{
+    margin-top: 25px;
+}
+
+.client-profile .btn-block{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.non-margin-top{
+    margin-top: 0;
+}

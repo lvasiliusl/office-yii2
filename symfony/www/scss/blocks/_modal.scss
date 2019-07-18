@@ -1,0 +1,203 @@
+.info[data-open]{
+  background: url(/images/info.svg) center;
+  background-size: 120%;
+  color: $white;
+  /* border: 1px solid $infoModalBg; */
+  width: 2.2rem;
+  height: 2.2rem;
+  text-align: center;
+  line-height: 1.5;
+  border-radius: 50%;
+  display: inline-block;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.2rem;
+  margin-left: 27px;
+  padding-right: 2px;
+  overflow: hidden;
+  text-indent: -99999px;
+  vertical-align: middle;
+  &:hover{
+    opacity: .8;
+    /* background: darken($infoModalBg,20%); */
+  }
+  @for $i from 1 through 7 {
+    &.color_level-#{$i} {
+      background: url(/images/level-#{$i}.svg) center;
+    }
+  }
+  
+}
+
+
+.cell{
+  position: relative;
+  .info[data-open]{
+    position: absolute;
+    right: 0px;
+    bottom: 26px;
+  }
+}
+
+label {
+  .info[data-open]{
+    position: absolute;
+    right: 0px;
+    top: -4px;
+  }
+}
+// modal
+.reveal-overlay {
+  background-color: rgba(130, 130, 130, 0.33);
+  height: 100vh;
+  z-index: 9999;
+}
+.reveal {
+  outline: none;
+  padding: 0px;
+  border-radius: 16px;
+  border: 0px;
+  overflow: hidden;
+  width: calc(100% - 535px);
+  margin-left: 455px;
+  max-width: 100%;
+  margin-right: 80px;
+  top: 50% !important;
+  transform: translateY(-50%);
+
+  &.long-modal {
+    top: 0px !important;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    transform: none;
+  }
+  
+  &.confirm-modal {
+    margin: 0 auto;
+    width: 420px;
+    
+    .white-block {
+        
+        .block-body {
+            padding: 10px 10px 0;
+            
+            p {
+                margin-bottom: 0;
+            }
+            
+            .button {
+                padding: 15px;
+                min-width: 140px;
+                margin: 20px 0;
+            }
+        }
+    }
+  }
+  
+  .white-block {
+    margin-top: 0px;
+    margin-bottom: 0px !important;
+    h3.block-head {
+      position: relative;
+      .close-button {
+        background-image: url('/images/close-btn.svg');
+        background-position: center center;
+        background-size: 100%;
+        width: 40px;
+        height: 40px;
+        display: block;
+        position: absolute;
+        right: 60px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+    .block-body {
+        padding: 42px 45px 0px;
+    }
+  }
+  p.exercise_description {
+    padding-top: 20px;
+    font-weight: 500;
+    max-width: 97%;
+  }
+  /*
+    responsive video fix
+    read more https://www.h3xed.com/web-development/how-to-make-a-responsive-100-width-youtube-iframe-embed
+  */
+  .video {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .exercises_suggested {
+    margin: 0px;
+    padding: 26px 0px 36px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    li {
+      text-align: center;
+      h5 {
+        color: $tableTheadColor;
+      }
+      p {
+        font-weight: 500;
+      }
+      &:nth-of-type(1) {
+        flex: 0 0 10%;
+        text-align: left;
+      }
+      &:nth-of-type(2) {
+        flex: 0 0 45%;
+        padding-left: 26px;
+      }
+      &:nth-of-type(3) {
+        flex: 0 0 45%;
+        padding-left: 26px;
+      }
+    }
+  }
+  .exercises_completed_area {
+    .exercises_completed {
+      margin: 0px;
+      padding: 26px 0px 0px;
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      li {
+        &:nth-of-type(1) {
+          flex: 0 0 10%;
+          .number {
+            display: block;
+            align-self: center;
+            color: $tableTbodyColor;
+          }
+        }
+        &:nth-of-type(2) {
+          flex: 0 0 45%;
+          padding-left: 26px;
+        }
+        &:nth-of-type(3) {
+          flex: 0 0 45%;
+          padding-left: 26px;
+        }
+        .select_wrapper {
+          margin: 0px;
+        }
+      }
+    }
+  }
+}

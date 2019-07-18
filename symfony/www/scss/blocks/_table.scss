@@ -1,0 +1,343 @@
+table {
+  td{
+    padding-bottom: 50px;
+  }
+  &.bottom-line{
+    tr+tr{
+      td{
+        border-top:1px solid $tableRowBorderColor;
+      }
+    }
+  }
+}
+
+// table inside white-block or transparent-block
+.white-block, .transparent-block {
+  &.hpadding {
+    padding: 0px;
+  }
+  .table {
+    table-layout: initial;
+    border-spacing: 0px;
+    margin-bottom: 0px;
+    thead {
+      background-color: $tableTheadBgColor;
+      th {
+        color: $tableTheadColor;
+        text-transform: uppercase;
+        font-weight: 300;
+        padding: 24px 0px 24px 0px;
+        letter-spacing: 1.4px;
+        border: 0px;
+        text-align: left !important;
+        font-weight: 500;
+        line-height: 1.8em;
+        &:first-child {
+          padding-left: 61px;
+        }
+        
+        a {
+            color: inherit;
+        }
+      }
+    }
+    &.js-sortable,
+    &.sortable {
+      position: relative;
+
+      th:not(.hide-sortable) {
+        cursor: pointer;
+        &::after {
+          content: '';
+          position: relative;
+          display: inline-block;
+          width: 34px;
+          height: 20px;
+          background-image: url('/images/table-sort-arrow.svg');
+          background-size: 100%;
+          margin-left: 11px;
+          top: 3px;
+          background-position: center center;
+          opacity: 0;
+          transition: all 300ms ease;
+        }
+        &:hover::after {
+          opacity: 1;
+        }
+        &.up::after {
+          opacity: 1;
+          transform: rotateX(180deg);
+        }
+        &.down::after {
+          opacity: 1;
+        }
+      }
+    }
+    tbody {
+      tr {
+        td {
+          padding: 27px 0px 27px 0px;
+          letter-spacing: 0.6px;
+          color: $tableTbodyColor;
+          border-bottom: 1px solid $tableRowBorderColor;
+          &:first-child {
+            padding-left: 61px;
+          }
+          
+          a {
+              color: inherit;
+          }
+        }
+        &:last-child {
+          border-bottom: 0px;
+        }
+      }
+    }
+    &.dashboard {
+      th:nth-of-type(1),
+      td:nth-of-type(1) {
+        width: 30.5%;
+      }
+      th:nth-of-type(2),
+      td:nth-of-type(3) {
+        width: 17.5%;
+      }
+      th:nth-of-type(3),
+      td:nth-of-type(3) {
+        width: 17.5%;
+      }
+      th:nth-of-type(4),
+      td:nth-of-type(4) {
+        width: 15.5%;
+        text-align: center;
+      }
+      td:nth-of-type(4) {
+        padding-right: 50px;
+      }
+      th:nth-of-type(5),
+      td:nth-of-type(5) {
+        width: auto;
+        text-align: center;
+      }
+      td:nth-of-type(5) {
+        padding-right: 90px;
+      }
+    }
+    &.clients {
+      th:nth-of-type(1),
+      td:nth-of-type(1) {
+        width: 90px;
+        padding-left: 40px;
+      }
+      th:nth-of-type(2),
+      td:nth-of-type(2) {
+        width: 23.7%;
+      }
+      th:nth-of-type(3),
+      td:nth-of-type(3) {
+        width: 21.7%;
+      }
+      th:nth-of-type(4),
+      td:nth-of-type(4) {
+        width: 15.3%;
+        text-align: left;
+      }
+      td:nth-of-type(4) {
+        padding-right: 0px;
+      }
+      th:nth-of-type(5),
+      td:nth-of-type(5) {
+        width: 15%;
+        text-align: left;
+      }
+      td:nth-of-type(5) {
+        padding-right: 0px;
+      }
+    }
+    &.biometric-table{
+      tr {
+        td, th{
+          &:first-child{
+            padding: 26px 0 26px 6px;
+          }
+          &:last-child{
+            padding: 26px;
+          }
+        }
+      }
+    }
+    &.strength {
+      margin-bottom: 20px;
+      tr {
+        td, th{
+          input {
+            width: 80%;
+            display: block;
+            margin: 0;
+          }
+          &:nth-of-type(1) {
+            width: 47.8%;
+          }
+          &:nth-of-type(2){
+             width: 26%;
+          }
+          &:nth-of-type(3){
+            width: auto;
+          }
+        }
+      }
+    }
+    &.gain-strength {
+      tr {
+        td, th{
+          &:nth-of-type(1) {
+            width: 5%;
+            padding-left: 40px;
+          }
+          &:nth-of-type(2) {
+            width: 25.4%;
+          }
+          &:nth-of-type(3){
+             width: 19.5%;
+          }
+          &:nth-of-type(4){
+            width: 18.5%;
+          }
+          &:nth-of-type(5){
+            width: 10%;
+          }
+          &:nth-of-type(6){
+            width: 9.6%;
+          }
+          &:nth-of-type(7){
+            width: auto;
+          }
+        }
+      }
+    }
+    &.exercises {
+      thead {
+        tr {
+          th {
+            border-bottom: 3px solid $borderStrengthBottomColor;
+            &:nth-of-type(1) {
+              width: 43.3%;
+            }
+            &:nth-of-type(2){
+              width: 32.6%;
+            }
+            &:nth-of-type(3){
+              width: auto;
+            }
+          }
+        }
+      }
+      tbody {
+        tr {
+          td {
+            &:nth-of-type(1) {
+              width: 43.3%;
+            }
+            &:nth-of-type(2){
+              width: 32.6%;
+            }
+            &:nth-of-type(3){
+              width: auto;
+            }
+          }
+        }
+      }
+    }
+    &.intensity {
+      tr {
+        td, th{
+          &:nth-of-type(1) {
+            width: 21.7%;
+          }
+          &:nth-of-type(2){
+            width: 17.4%;
+          }
+          &:nth-of-type(3){
+            width: 13%;
+          }
+          &:nth-of-type(4){
+            width: 11.1%;
+          }
+          &:nth-of-type(5){
+            width: 13%;
+          }
+          &:nth-of-type(6){
+            width: 8.6%;
+          }
+          &:nth-of-type(7){
+            width: auto;
+          }
+        }
+      }
+    }
+    &.next-workout {
+      tr {
+        td{
+          &:nth-of-type(1) {
+            width: 30.4%;
+          }
+          &:nth-of-type(2){
+            width: auto;
+            padding: 0px 62px 0px 0px;
+          }
+          span {
+            display: inline-block;
+            vertical-align: middle;
+            line-height: 50px;
+          }
+          .secondary {
+            padding: 14px 30px;
+            display: inline-block;
+            vertical-align: middle;
+            margin-bottom: 0px;
+          }
+        }
+      }
+    }
+    &.accordion-table {
+      tr {
+        td{
+          &:nth-of-type(1) {
+            width: 8.5%;
+          }
+          &:nth-of-type(2){
+            width: 48%;
+          }
+          &:nth-of-type(3){
+            width: 10%;
+          }
+          &:nth-of-type(4){
+            width: 9.6%;
+          }
+          &:nth-of-type(5){
+            width: 12.5%;
+          }
+          &:nth-of-type(6){
+            width: auto;
+            padding: 0px 62px 0px 0px;
+          }
+          .secondary {
+            padding: 14px 30px;
+            display: inline-block;
+            vertical-align: middle;
+            margin-bottom: 0px;
+          }
+        }
+      }
+    }
+    &.no-bordered {
+      tbody {
+        tr {
+          td {
+            border: 0px;
+          }
+        }
+      }
+    }
+  }
+}
